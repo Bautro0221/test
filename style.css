@@ -47,38 +47,37 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    position: relative; /* Needed for the line effect */
+    position: relative;
 }
 
 nav a.active:after,
 nav a:hover:after {
     content: '';
     display: block;
-    height: 2px; /* Thickness of the line */
-    background-color: #ffc600; /* Line color */
-    width: 100%; /* Full width */
-    transition: width 0.3s; /* Smooth transition */
+    height: 2px;
+    background-color: #ffc600;
+    width: 100%;
+    transition: width 0.3s;
     position: absolute;
     left: 0;
-    bottom: -5px; /* Position it below the text */
+    bottom: -5px;
 }
 
 nav a:after {
     content: '';
     display: block;
-    height: 2px; /* Thickness of the line */
-    background-color: transparent; /* Start with no line */
-    width: 0; /* Start with no width */
+    height: 2px;
+    background-color: transparent;
+    width: 0;
     position: absolute;
     left: 0;
-    bottom: -5px; /* Position it below the text */
-    transition: width 0.3s; /* Smooth transition */
+    bottom: -5px;
+    transition: width 0.3s;
 }
 
 nav a.active:after {
-    width: 100%; /* Full width for active link */
+    width: 100%;
 }
-/* Dropdown styles */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -164,9 +163,9 @@ footer {
 }
 .social-buttons {
     display: flex;
-    justify-content: center; /* Center the buttons */
-    gap: 10px; /* Space between buttons */
-    margin: 20px 0; /* Margin above and below */
+    justify-content: center; 
+    gap: 10px;  
+    margin: 20px 0; 
 }
 
 .social-button {
@@ -175,42 +174,42 @@ footer {
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    color: white; /* Text color */
+    color: white;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .social-button i {
-    margin-right: 5px; /* Space between icon and text */
+    margin-right: 5px;
 }
 
 .tiktok {
-    background-color: #69C9D0; /* TikTok color */
+    background-color: #69C9D0; 
 }
 
 .tiktok:hover {
-    background-color: #55B2B4; /* Darker shade on hover */
+    background-color: #55B2B4; 
 }
 
 .instagram {
-    background-color: #C13584; /* Instagram color */
+    background-color: #C13584; 
 }
 
 .instagram:hover {
-    background-color: #A12D73; /* Darker shade on hover */
+    background-color: #A12D73; 
 }
 
 .facebook {
-    background-color: #3b5998; /* Facebook color */
+    background-color: #3b5998;
 }
 
 .facebook:hover {
-    background-color: #334A8D; /* Darker shade on hover */
+    background-color: #334A8D;
 }
 .github {
-    background-color: #000000; /* GitHub color */
+    background-color: #000000;
 }
 
 .github:hover {
-    background-color: #555; /* Darker shade on hover */
+    background-color: #555;
 }
