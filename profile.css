@@ -161,10 +161,9 @@ footer {
     height: 100%;
     object-fit: cover;
 }
-/* Basic styling for the image slider container */
 .image-slider {
-    width: 300px; /* Adjust as needed */
-    height: 400px; /* Adjust as needed */
+    width: 300px; 
+    height: 400px; 
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -181,3 +180,77 @@ footer {
     83.33% { background-image: url('image/fixie1.jpg'); }
     100%  { background-image: url('image/cebuduathlon.jpg'); }
 }
+.container-2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 45%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ccc; /* Change to your preferred line color */
+    transform: translateX(-50%); /* Center the line */
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin: 40px 0; /* Increased margin for better spacing */
+    position: relative;
+}
+
+.timeline-left,
+.timeline-right {
+    width: 700%;
+}
+
+.timeline-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray; /* Default color */
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%); /* Center horizontally */
+    top: 20px; /* Adjust this value to position the circle vertically */
+    transition: background-color 0.3s, transform 0.3s; /* Added transition for smooth animation */
+}
+
+.timeline-circle:hover {
+    background-color: red; /* Change color on hover */
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up on hover */
+}
+
+.timeline-right {
+    position: relative; /* Needed for the absolute positioning of the circle */
+}
+
+.expandable-content {
+    display: none; /* Hidden by default */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.read-more:focus + .expandable-content,
+.read-more:focus-within + .expandable-content {
+    display: block; /* Show content when the read more link is focused */
+}
+
+.read-more:hover {
+    color: blue; /* Change link color on hover */
+}
+
+.timeline-item:hover .timeline-circle {
+    background-color: red; /* Change color on item hover */
+}
+
