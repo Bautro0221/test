@@ -67,13 +67,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .image-section img {
     width: 100%;
     max-width: 400px; 
     border-radius: 15px; 
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.25);
 }
 footer {
     background-color: #333;
@@ -159,4 +160,24 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* Basic styling for the image slider container */
+.image-slider {
+    width: 300px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: changeImage 10s infinite;
+}
+
+@keyframes changeImage {
+    0%   { background-image: url('image/cebuduathlon.jpg'); }
+    16.67% { background-image: url('image/7th.jpg'); }
+    33.33% { background-image: url('image/fixie1.jpg'); }
+    50%   { background-image: url('image/fixie2.jpg') }
+    66.67% { background-image: url('image/7th.jpg'); }
+    83.33% { background-image: url('image/fixie1.jpg'); }
+    100%  { background-image: url('image/cebuduathlon.jpg'); }
 }
