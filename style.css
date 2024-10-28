@@ -162,56 +162,15 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%;
+    bottom: 0; 
 }
-.social-buttons {
-    display: flex;
-    justify-content: center; 
-    gap: 10px;  
-    margin: 20px 0; 
-}
-
-.social-button {
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
+.footerclone {
+    background-color: #333;
     color: white;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.social-button i {
-    margin-right: 5px;
-}
-
-.tiktok {
-    background-color: #69C9D0; 
-}
-
-.tiktok:hover {
-    background-color: #55B2B4; 
-}
-
-.instagram {
-    background-color: #C13584; 
-}
-
-.instagram:hover {
-    background-color: #A12D73; 
-}
-
-.facebook {
-    background-color: #3b5998;
-}
-
-.facebook:hover {
-    background-color: #334A8D;
-}
-.github {
-    background-color: #000000;
-}
-
-.github:hover {
-    background-color: #555;
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    position: fixed;
+   
 }
