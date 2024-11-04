@@ -5,35 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filvert Kyo Bautro | Programmer</title>
     <link rel="icon" href="image/letter-f.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 <body>
-    <header>
-        <div class="container"> 
-            <a href="index.html" class="logo" style="cursor: pointer;">
-                <img src="image/Bautro-removebg-preview.png" alt="logo filvert">
-            </a>
-        </div>
-        <nav>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#"></a>
+            </div>
             <ul>
-                <li><a href="#blog">N/A</a></li>
-                <li><a href="https://bautro0221.github.io/HTML-PROFILEE/">Contacts</a></li>
-                <li><a href="about.html" class="nav-link active">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Language</a>
-                    <div class="dropdown-content">
-                        <a href="#">English</a>
-                        <a href="aboutfilipino.html">Filipino</a>
-                    </div>
-                </li>
+                <li><a href="index.html" style="--navAni:1">Home</a></li>
+                <li><a href="about.html"  class="active" style="--navAni:2">About</a></li>
+                <li><a href="https://bautro0221.github.io/HTML-PROFILEE/" style="--navAni:5">Contact</a></li>
             </ul>
-        </nav>        
+        </div>
     </header>
     <main>
         <div class="container-1">
             <div class="text-section">
-                <h1>I am <span>Filvert Kyo B. Bautro</span></h1>
+                <h2>I am <span>Filvert Kyo B. Bautro</span></h2>
                 <p>And as you might not know, I have a deep passion for sports and gaming.</p>
     
                 <h2>Passion and Experience</h2>
@@ -85,10 +77,52 @@
                     </div>
                 </div>
             </div>
-        </div>                             
+        </div>   
+        <h1 class="gallery"style="color: #fff;"> Gallery</h1>
+        <div class="wrapper-9">
+        <div class="container-9">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">
+                        <h4>First Love</h4>
+                        <p>A glimpse into a cherished memory, this picture reflects the sweetness of my first love innocent, genuine, and forever etched in my heart.</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h4>Family</h4>
+                        <p>This photograph captures the timeless bonds of family, a reminder of the strength and love that surrounds us, no matter where life takes us.</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="description">
+                        <h4>Natuure</h4>
+                        <p>Natuure - Discover the Wonders of Nature</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4">
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon">4</div>
+                    <div class="description">
+                        <h4>Natuure</h4>
+                        <p>Natuure - Discover the Wonders of Nature</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Filvert Kyo Bautro. All rights reserved.</p>  
-    </footer>
 </body>
 </html>

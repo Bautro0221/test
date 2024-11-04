@@ -5,43 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filvert Kyo Bautro | Programmer</title>
     <link rel="icon" href="image/letter-f.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="container"> 
-            <a href="index.html" class="logo" style="cursor: pointer;">
-                <img src="image/Bautro-removebg-preview.png" alt="logo filvert">
-            </a>
-        </div>
-        <nav>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#"></a>
+            </div>
             <ul>
-                <li><a href="#blog">N/A</a></li>
-                <li><a href="https://bautro0221.github.io/HTML-PROFILEE/">Contacts</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Language</a>
-                    <div class="dropdown-content">
-                        <a href="#">English</a>
-                        <a href="index filipino.html">Filipino</a>
-                    </div>
-                </li>
+                <li><a href="index.html" class="active" style="--navAni:1">Home</a></li>
+                <li><a href="about.html" style="--navAni:2">About</a></li>
+                <li><a href="https://bautro0221.github.io/HTML-PROFILEE/" style="--navAni:5">Contact</a></li>
             </ul>
-        </nav>        
+        </div>
     </header>
-    <section class="intro">
-        <div class="text">
-            <h2>Welcome!</h2>
-            <p>I am Filvert Kyo Bautro, a freshman college student at University of Cebu, majoring in Bachelor of Science in Information Technology.</p>
-            <a href="about.html" class="cta-button">Learn More About Me</a>
-        </div>
-        <div class="profile">
-            <img src="image/profile.jfif" alt="Profile of Filvert Kyo Bautro">
-        </div>
+    <section class="home-bg section h-100vh" id="home">
+        <video class="bg-vid" autoplay loop muted>
+            <source src="assets/video/video-bg.mp4" type="video/mp4">
+        </video>
+        <section class="container">
+            <div class="main">
+                <div class="rounding-sec">
+                    <div class="big-circle">
+                        <div class="icon-block">
+                            <img src="image/github.png" alt="" />
+                        </div>
+                        <div class="icon-block">
+                            <img src="image/tiktok.223x256 (1).png" alt="" />
+                        </div>
+                        <div class="icon-block">
+                            <img src="image/steam.253x256 (1).png" alt="" />
+                        </div>
+                        <div class="icon-block">
+                            <img src="image/instagram.png" alt="" />
+                        </div>
+                        <div class="icon-block">
+                            <img src="image/instagram.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="images">
+                        <img src="image/profile.jfif" alt="" class="img-w">
+                    </div>
+                </div>
+                <div class="detail">
+                    <h3>Hi, I'm</h3>
+                    <h1><span style="color:#f9532d;">Filvert</span> Kyo Bautro</h1>
+                    <p>I am Filvert Kyo Bautro, a freshman college student at University of Cebu, majoring in Bachelor of Science in Information Technology.</p>
+                    <a href="https://bautro0221.github.io/HTML-PROFILEE/">
+                        <button class="contact-button">Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </section>
     </section>
-
-    <footer class="footerclone">
-        <p>&copy; 2024 Filvert Kyo Bautro. All rights reserved.</p>    
-    </footer>
+    
 </body>
+
 </html>
+   
